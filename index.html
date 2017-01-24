@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Web Design</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+      <div class="page-header">
+        <h1>Responsive Web Design</h1>
+      </div>
+      </header>
+    <main>
+    <div id="content">
+    <section>
+      <h2>Why Should I Use Responsive Web Design?</h2>
+      <p>In today’s world of never changing technology, responsive web design can be a god send. Imaging having to design around every new device launched. As an employee in wireless, I see the never-ending cycle of new devices being launched weekly. That only encompasses smart phones and tablets. Then you start to factor in laptops, desktop computers, gaming consoles, televisions, appliances (wow, really), and everything else under the moon. Responsive web design helps designers factor in all of these different devices and screen resolutions without having to design a site for every, single device.</p>
+      <p>As someone who does at least half of her browsing on a smart phone, I know the frustration of horrible design. Having to flip my phone around trying to get the best viewing experience, and then having to scroll endlessly, only to end up frustrated and just leaving the site. In business, having a user leave your site without making a purchase, or getting the information they need can make or break you. We all need responsive web design to make our lives somewhat easier when designing for the past, present, and future technology.</p>
+    </section>
+    </div>
+      </main>
+    
+    <h2>How can we help you?</h2>
+    <form>
+      <div class="form-group">
+        <label class="control-label">Name:</label>
+          <input type="text" class="form-control" name="name" required>
+      </div>
+    
+      <div class="form-group">
+        <label class="control-label">Email Address:</label>
+          <input type="email" class="form-control" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label">Phone Number:</label>
+          <input type="tel" class="form-control" name="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+          <span id="helpBlock" class="help-block">Example: 206-867-5309</span>
+      </div> 
+      
+        <div class="radio">
+          <label>
+          <input type="radio" name="existingSite" value="Existing">
+            I have an existing site
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="noSite" value="None">
+            I do not have a site
+          </label>
+        </div>
+      
+      <div class="form-group">
+        <label class="control-label">Tell us more about you!</label>
+          <textarea class="form-control" name="about" required></textarea>
+      </div>
+            
+      <div class="form-group">
+        <label class="control-label">Preferred Method of Contact:</label>
+        <select class="custom-select">
+          <option value="email">Email</option>
+          <option value="phone">Telephone</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      </form>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pet Adoption</title>
+  </head>
+
+  <body>
+    <form>
+      <label>Name: 
+        <input type="text" name="name" required>
+      </label>
+      
+      <label>Address1:
+        <input type="text" name="street">
+      </label>
+      
+      <label>City:
+        <input type="text" name="city" placeholder="Seattle">
+      </label>
+      
+      <label for="zip">Zip Code
+        <input type="text" name="zip" id="zip" autofocus>
+      </label>
+      
+      <label>What type of pet?
+      <select name="pet-type">
+        <option value="">Choose a pet</option>
+        <option value="rabbit">Rabbit</option>
+        <option value="cat">Cat</option>
+        <option value="dog">Dog</option>
+      </select>
+      </label>
+      
+      <label>What breeds?
+        <textarea name="breeds" maxlength="5" rows="10"></textarea>
+      </label>
+      
+      <label>Indoor or outdoor pet?</label>
+        <label>Indoor
+          <input type="radio" name="lifestyle" value="indoor">
+        </label>
+        <label>Outdoor
+          <input type="radio" name="lifestyle" value="outdoor">
+        </label>
+      
+      <fieldset>
+          <legend>What kind of pets do you have?</legend>
+          <label>Dog
+            <input type="checkbox" name="existing" value="dog">
+          </label>
+          <label>Cat
+            <input type="checkbox" name="existing" value="cat">
+          </label>
+      </fieldset>
+    
+      <fieldset>
+        <legend>What kind of food will you feed?</legend>
+        <label>Kibble
+          <input type="checkbox" name="existing" value="kibble">
+        </label>
+        <label>Canned food
+          <input type="checkbox" name="existing" value="canned food">
+        </label>
+      </fieldset>
+  
+      <label>Do you already have a vet?</label>
+        <label>Yes
+          <input type="radio" name="lifestyle" value="yes">
+        </label>
+        <label>No
+          <input type="radio" name="lifestyle" value="no">
+        </label>
+      
+      <label>Pickup Date
+        <input type="date" name="pickup" min="2017-01-19">
+      </label>
+      
+      <input type="submit" value="Submit" name="submit">
+    </form>
+  </body>
+</html>
